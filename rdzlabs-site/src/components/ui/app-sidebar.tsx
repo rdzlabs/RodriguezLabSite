@@ -1,4 +1,4 @@
-import { Calendar, Contact, FolderRoot, HandCoins, Home } from "lucide-react"
+import { Calendar, Contact, FolderRoot, HandCoins, Home, FileUser } from "lucide-react"
 
 import {
   Sidebar,
@@ -25,6 +25,11 @@ const items = [
     icon: FolderRoot,
   },
   {
+    title: "Resume",
+    url: "/resume",
+    icon: FileUser,
+  },
+  {
     title: "Calendar",
     url: "/calendar",
     icon: Calendar,
@@ -36,7 +41,7 @@ const items = [
   },
   {
     title: "Support",
-    url: "support",
+    url: "/support",
     icon: HandCoins,
   },
 ]
@@ -47,7 +52,7 @@ export function AppSidebar() {
       <Sidebar className="h-full w-64 shadow-lg bg-white">
         <SidebarContent>
           <SidebarGroup>
-            <SidebarGroupLabel>Application</SidebarGroupLabel>
+            <SidebarGroupLabel>RdzLabs.CO</SidebarGroupLabel>
             <SidebarGroupContent>
               <SidebarMenu>
                 {items.map((item) => (
